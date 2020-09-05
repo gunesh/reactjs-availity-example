@@ -16,7 +16,7 @@ class App extends Component {
           }}
           onSubmit={values => alert(JSON.stringify(values))}
           validationSchema={yup.object().shape({
-            hello: yup.string().required()
+            email: yup.string().required()
           })}
         >
           <Field name="email" labelClass="required" type="text" label="Email" />
