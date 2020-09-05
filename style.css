@@ -1,3 +1,13 @@
 h1, p {
   font-family: Lato;
 }
+.form-group {
+    margin-bottom: 1rem;
+    display: table;
+    width: 100%;
+}
+label {
+    display: table-cell;
+    margin-bottom: .5rem;
+    width: 25%;
+}
