@@ -22,21 +22,9 @@ class App extends Component {
           })}
         >
           <Field name="email" labelClass="required" type="text" label="Email" />
-          <Field
-            name="pswrd"
-            labelClass="required"
-            type="password"
-            label="Password"
-          />
-          <Field
-            name="mobile"
-            labelClass="required"
-            type="number"
-            label="Mobile"
-          />
+         
 
-          <Label for="hello">Hello Field</Label>
-          <Input name="hello" />
+         
           <Button type="submit" color="primary">
             Submit
           </Button>
