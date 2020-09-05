@@ -4,6 +4,7 @@ import Example from "./Example";
 import "./style.css";
 import { Form, Field } from '@availity/form';
 import * as yup from 'yup';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           })}
         >
           <Field name="hello" type="text" label="Hello" />
+          <Button type="submit" color="primary">Submit</Button>
         </Form>
       </div>
     );
