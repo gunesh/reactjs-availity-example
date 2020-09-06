@@ -21,9 +21,7 @@ const Field = ({}) => {
         hello: ""
       }}
       onSubmit={values => alert(JSON.stringify(values))}
-      validationSchema={yup.object({
-        
-      })}
+      validationSchema={yup.object({})}
     >
       <Field name="hello" label="Greeting" />
       <Button type="submit" color="primary">
