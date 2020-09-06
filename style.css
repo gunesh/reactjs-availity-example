@@ -11,3 +11,6 @@ label {
     margin-bottom: .5rem;
     width: 25%;
 }
+input {
+  width: 75%
+}

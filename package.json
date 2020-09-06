@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@availity/form": "^0.5.30",
+    "@availity/phone": "^1.1.18",
     "availity-reactstrap-validation": "^2.6.1",
     "formik": "^2.1.5",
+    "libphonenumber-js": "^1.7.38",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "reactstrap": "^8.5.1",
