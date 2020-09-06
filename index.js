@@ -25,7 +25,11 @@ class App extends Component {
       <div style={{ padding: 100 }}>
         <Form
           initialValues={{
-            email: ""
+            email: "",
+            phone: '',
+            test_radio: '',
+            test_checkbox: '',
+            dateOfService: '',
           }}
           onSubmit={values => alert(JSON.stringify(values))}
           validationSchema={yup.object({
@@ -51,13 +55,13 @@ class App extends Component {
             }}
           />
 
-          <CheckboxGroup name="hello" label="Checkbox Group">
+          <CheckboxGroup name="test_checkbox" label="Checkbox Group">
             <Checkbox label="Check One" value="uno" />
             <Checkbox label="Check Two" value="dos" />
             <Checkbox label="Check Three" value="tres" />
           </CheckboxGroup>
 
-          <RadioGroup name="hello" label="Radio Group">
+          <RadioGroup name="heltest_radio" label="Radio Group">
             <Radio label="Radio One" value="uno" />
             <Radio label="Radio Two" value="dos" />
             <Radio label="Radio Three" value="tres" />
