@@ -13,6 +13,9 @@ import {
   Radio
 } from "@availity/form";
 import { Phone, validatePhone } from "@availity/phone";
+import DateField from "@availity/date";
+import { avDate } from "@availity/yup";
+
 import * as yup from "yup";
 import { Button, Label } from "reactstrap";
 
@@ -59,6 +62,15 @@ class App extends Component {
             <Radio label="Radio Two" value="dos" />
             <Radio label="Radio Three" value="tres" />
           </RadioGroup>
+
+          <DateField
+            label="Date of Service"
+            id="dateOfService"
+            name="dateOfService"
+            min={{ value: 7, units: "day" }}
+            max={{ value: 7, units: "day" }}
+          />
+
           <Button type="submit" color="primary">
             Submit
           </Button>
