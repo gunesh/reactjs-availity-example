@@ -15,7 +15,7 @@ import {
 import { Phone, validatePhone } from "@availity/phone";
 import DateField from "@availity/date";
 import { avDate } from "@availity/yup";
-
+import { SelectField } from "@availity/select";
 import * as yup from "yup";
 import { Button, Label } from "reactstrap";
 
@@ -26,10 +26,11 @@ class App extends Component {
         <Form
           initialValues={{
             email: "",
-            phone: '',
-            test_radio: '',
-            test_checkbox: '',
-            dateOfService: '',
+            phone: "",
+            test_radio: "",
+            test_checkbox: "",
+            dateOfService: "",
+            justTheInput: ""
           }}
           onSubmit={values => alert(JSON.stringify(values))}
           validationSchema={yup.object({
@@ -73,6 +74,17 @@ class App extends Component {
             name="dateOfService"
             min={{ value: 7, units: "day" }}
             max={{ value: 7, units: "day" }}
+          />
+
+          <SelectField
+            label="Just The Input"
+            name="justTheInput"
+            isMulti={false}
+            options={[
+              { label: "Option 1", value: 1 },
+              { label: "Option 2", value: 2 },
+              { label: "Option 3", value: 3 }
+            ]}
           />
 
           <Button type="submit" color="primary">
