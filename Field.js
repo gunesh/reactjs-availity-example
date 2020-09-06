@@ -1,19 +1,8 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
-import "./style.css";
-import {
-  Form,
-  Field,
-  FormGroup,
-  Input,
-  CheckboxGroup,
-  Checkbox,
-  RadioGroup,
-  Radio
-} from "@availity/form";
-
+import React from "react";
+import { Form, CheckboxGroup, Checkbox } from "@availity/form";
 import * as yup from "yup";
-import { Button, Label } from "reactstrap";
+import { Button } from "reactstrap";
+
 const Field = ({}) => {
   return (
     <Form
