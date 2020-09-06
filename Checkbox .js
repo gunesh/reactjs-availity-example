@@ -7,12 +7,18 @@ const Checkbox = ({}) => {
   return (
     <Form
       initialValues={{
-        hello: ""
+        hello: []
       }}
-      onSubmit={values => alert(JSON.stringify(values))}
-      validationSchema={yup.object({})}
+      onSubmit={() => {}}
+      validationSchema={yup.object().shape({
+        hello: yup.array().required("At least one checkbox is required")
+      })}
     >
-      <Field name="hello" label="Greeting" />
+      <CheckboxGroup name="hello" label="Checkbox Group">
+        <Checkbox label="Check One" value="uno" />
+        <Checkbox label="Check Two" value="dos" />
+        <Checkbox label="Check Three" value="tres" />
+      </CheckboxGroup>
       <Button type="submit" color="primary">
         Submit
       </Button>
